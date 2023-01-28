@@ -431,4 +431,21 @@
     };
 
 
+    let playing = false;
+
+function play() {
+  if (!playing) {
+    document.getElementById("equalizer").style.display = "block";
+    document.getElementById("play-btn").style.backgroundImage = "url(stop-icon.svg)";
+    playing = true;
+  } else {
+    document.getElementById("equalizer").style.display = "none";
+    document.getElementById("play-btn").style.backgroundImage = "url(play-icon.svg)";
+    playing = false;
+  }
+}
+
+
+
+
 }(window.jQuery);

@@ -48,7 +48,7 @@
                         <li><a href="#section-services"><span>02</span>About Us</a></li>
                         <!-- <li><a href="#section-experiences"><span>03</span>Experiences</a></li> -->
                         <li><a href="#section-portfolio"><span>05</span>Programs</a></li>
-                        <li><a href="#section-blog"><span>06</span>News</a></li>
+                        <!-- <li><a href="#section-blog"><span>06</span>News</a></li> -->
                         <li><a href="#section-contact"><span>07</span>Contact</a></li>
                     </ul>
                 </nav>
@@ -60,7 +60,30 @@
 				</span>
 
                 <div id="mp-col">
-                    <a href="#" class="btn-download light"><span class="id-color"><i class="fa fa-volume-up"></i></span>Listen to live Radio</a>
+                    <!-- <div id="player">
+                        <button id="play-btn" onclick="play()"></button>
+                        <div id="equalizer">
+                          <div class="bar"></div>
+                          <div class="bar"></div>
+                          <div class="bar"></div>
+                          <div class="bar"></div>
+                          <div class="bar"></div>
+                        </div>
+                      </div> -->
+                      <div class="radio-container">
+                        <audio id="radioPlayer" src="https://stream.zeno.fm/dupvt1fgcewvv"></audio>
+                        <div class="button-play"><i class="fa fa-play" aria-hidden="true"></i></div>
+                        <div class="button-stop"><i class="fa fa-stop" aria-hidden="true"></i></div>
+                            <span class="text-center">Listen to Live Radio</span>
+                            <div class="equalizer">
+                                <div class="bar4"></div>
+                                <div class="bar3"></div>
+                                <div class="bar2"></div>
+                                <div class="bar1"></div>
+                                <!-- add more bars as needed -->
+                              </div>
+                    </div>
+                    
                 </div>
 
                 <div class="clearfix"></div>
@@ -107,12 +130,15 @@
                             </div>
                         </div>
                     </div>
+                    <div id="mp-col">
+                        <a href="#" class="btn-download light"><span class="id-color"><i class="fa fa-volume-up"></i></span>Listen to live Radio</a>
+                    </div>
 
-                    <a href="#section-services" class="scroll-to">
+                    <!-- <a href="#section-services" class="scroll-to">
                         <span class="arrow bounce">
 							<i class="arrow_down"></i>
                         </span>
-                    </a>
+                    </a> -->
                 </section>
                 <!-- section close -->
 
@@ -452,6 +478,10 @@
                                                 <div>Address</div>
                                                 <div>Parklands, Kitwe Zambia</div>
                                             </li>
+                                            <li>
+                                                <div>Rates</div>
+                                                <div><a href="#" class="btn-download light"><span class="id-color"></span>Download Rates Card</a></div>
+                                            </li>
                                         </ul>
                                     </div>
 
@@ -530,6 +560,7 @@
     <script src="js/typed-custom-2.js"></script>
 	<script src="js/particles.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/stream.js"></script>
     <script src="js/designesia.js"></script>
 
 </body>
